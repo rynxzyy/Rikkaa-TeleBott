@@ -1,0 +1,41 @@
+{
+  "name": "rikkaa-telebott",
+  "version": "1.0.0",
+  "description": "Simple base bot telegram using node-telegram-bot-api",
+  "main": "start.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node --no-deprecation ./src/system/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rynxzyy/Rikkaa-TeleBott.git"
+  },
+  "keywords": [
+    "telegrambot"
+  ],
+  "author": "rynn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rynxzyy/Rikkaa-TeleBott/issues"
+  },
+  "homepage": "https://github.com/rynxzyy/Rikkaa-TeleBott#readme",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "chalk": "^4.1.2",
+    "cheerio": "^1.0.0",
+    "child_process": "^1.0.2",
+    "chokidar": "^4.0.1",
+    "form-data": "^4.0.1",
+    "fs": "^0.0.1-security",
+    "human-readable": "^0.2.1",
+    "moment-timezone": "^0.5.46",
+    "ms": "^2.1.3",
+    "node-fetch": "^2.7.0",
+    "node-telegram-bot-api": "^0.66.0",
+    "os": "^0.1.2",
+    "path": "^0.12.7",
+    "util": "^0.12.5",
+    "undici": "^5.28.5"
+  }
+}
