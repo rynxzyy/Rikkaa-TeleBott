@@ -203,6 +203,8 @@ module.exports = rynn
 **Example:**
 ```javascript
 case 'command': {
+    if (!m.isOwner) return ryn.reply({ text: mess.owner }, m)
+    if (m.isGroup) return ryn.reply({ text: mess.private }, m)
     ryn.reply({ text: 'huh?' }, m)
 }
 break
