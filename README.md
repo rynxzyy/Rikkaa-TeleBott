@@ -40,17 +40,17 @@ Rikkaa-TeleBott is a powerful and flexible Telegram bot base built on top of the
     global.ownerId = [1234567890]; // Owner ID, can add more than 1
 
     global.mess = {
-        internalerr: 'Internal server error!',
-    	owner: 'Owner-only feature!',
-    	group: 'Use in a group!',
-    	private: 'Use in a private chat!',
-    	wait: 'Wait...',
-    	error: 'Oops, an error occurred',
-    	done: 'Done!'
+      internalerr: 'Internal server error!',
+      owner: 'Owner-only feature!',
+      group: 'Use in a group!',
+      private: 'Use in a private chat!',
+      wait: 'Wait...',
+      error: 'Oops, an error occurred',
+      done: 'Done!'
     };
 
     String.prototype.capitalize = function () {
-        return this.charAt(0).toUpperCase() + this.slice(1);
+      return this.charAt(0).toUpperCase() + this.slice(1);
     };
     ```
 
