@@ -165,17 +165,17 @@ This file is the heart of your bot's configuration. Here you can:
 
 ```javascript
 module.exports = {
-    command: ['command'],
-    desc: 'desc',
-    category: ['category'],
-    settings: {
-        private: true,
-        owner: true,
-        group: false
-    },
-    async run(m, { ryn }) {
-        ryn.reply({ text: 'huh?' }, m)
-    },
+  command: ['command'],
+  desc: 'desc',
+  category: ['category'],
+  settings: {
+    private: true,
+    owner: true,
+    group: false
+  },
+  async run(m, { ryn }) {
+    ryn.reply({ text: 'huh?' }, m)
+  },
 };
 ```
 
@@ -183,16 +183,16 @@ module.exports = {
 
 ```javascript
 let rynn = async (m, { ryn }) => {
-    ryn.reply({ text: `huh?` }, m)
+  ryn.reply({ text: `huh?` }, m)
 }
 
 rynn.command = ['command']
 rynn.desc = 'desc'
 rynn.category = ['category']
 rynn.settings = {
-    private: true,
-    owner: true,
-    group: false
+  private: true,
+  owner: true,
+  group: false
 }
 
 module.exports = rynn
@@ -203,9 +203,9 @@ module.exports = rynn
 **Example:**
 ```javascript
 case 'command': {
-    if (!m.isOwner) return ryn.reply({ text: mess.owner }, m)
-    if (m.isGroup) return ryn.reply({ text: mess.private }, m)
-    ryn.reply({ text: 'huh?' }, m)
+  if (!m.isOwner) return ryn.reply({ text: mess.owner }, m)
+  if (m.isGroup) return ryn.reply({ text: mess.private }, m)
+  ryn.reply({ text: 'huh?' }, m)
 }
 break
 ```
